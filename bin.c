@@ -1,0 +1,45 @@
+#include <stdio.h>
+
+int binarySearch(int arr[], int size, int target) {
+    int left = 0;
+    int right = size - 1;
+    while (left <= right) {
+    int mid = left + (right - left) / 2;
+
+    if (arr[mid] == target) {
+    return mid;
+    }
+
+    if (arr[mid] < target) {
+    left = mid + 1;
+
+    else {
+    right = mid - 1;
+    }
+    }
+
+    return -1;
+}
+
+int main() {
+    int numbers[10] = {2, 5, 8, 12, 16, 23, 38, 56, 72, 91};
+    int target = 23;
+    int size = 10;
+    int resultIndex = binarySearch(numbers, size, target);
+
+    if (resultIndex != -1) {
+   printf("Element %d found at index %d.\n", target, resultIndex);
+    } else {
+   printf("Element %d not found in the array.\n", target);
+    }
+
+    target = 50;
+    resultIndex = binarySearch(numbers, size, target);
+    if (resultIndex != -1) {
+   printf("Element %d found at index %d.\n", target, resultIndex);
+    } else {
+   printf("Element %d not found in the array.\n", target);
+    }
+
+    return 0;
+}
