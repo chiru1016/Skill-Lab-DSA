@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int array[10] = {2, 4, 0, 1, 9, 5, 8, 3, 6, 7};
+    int array[10] = {2, 4, 0, 1, 9, 5, 8, 3, 6, 7
     int search_key;
     int found = 0;
     int i;
