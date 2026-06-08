@@ -5,4 +5,4 @@ for i in arr:
         new.append(i)
 print(new)
 #for first Index
-print
+print (new[])
