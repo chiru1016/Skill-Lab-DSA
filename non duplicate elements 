@@ -1,0 +1,8 @@
+arr = [1,2,1,2,3]
+new =[]
+for i in arr:
+    if arr.count()==1:
+        new.append(i)
+print(new)
+#for first Index
+print
