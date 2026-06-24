@@ -1,5 +1,5 @@
 arr = [1,2,1,2,3]
-new =[]
+new =[] // new array
 for i in arr:
     if arr.count()==1:
         new.append(i)
